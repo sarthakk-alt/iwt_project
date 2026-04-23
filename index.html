@@ -29,7 +29,6 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="logo">
-        <span class="logo-icon">⏳</span>
         <div>
           <h1 class="logo-title">INTO THE FUTURE</h1>
           <p class="logo-subtitle">Journey Through the Ages</p>
@@ -37,24 +36,13 @@
       </div>
 
       <div class="timeline-control">
-        <label for="timeline-select" class="timeline-label">
-          <span class="label-icon">🕰️</span> Select Era
-        </label>
-        <div class="select-wrapper">
-          <select id="timeline-select">
-            <option value="">— Choose a Timeline —</option>
-            <option value="18th">18th Century (1700–1799)</option>
-            <option value="19th">19th Century (1800–1899)</option>
-            <option value="20th">20th Century (1900–1999)</option>
-            <option value="modern">Modern Era (2000–Present)</option>
-          </select>
-          <span class="select-arrow">▾</span>
-        </div>
-      </div>
-
-      <div class="header-badge">
-        <span class="badge-dot"></span>
-        <span id="selected-era-label">Select an era to begin</span>
+        <select id="timeline-select" class="era-select">
+          <option value="">Choose an Era</option>
+          <option value="18th">18th Century (1700–1799)</option>
+          <option value="19th">19th Century (1800–1899)</option>
+          <option value="20th">20th Century (1900–1999)</option>
+          <option value="modern">Modern Era (2000–Present)</option>
+        </select>
       </div>
     </div>
   </header>
@@ -65,8 +53,8 @@
     <!-- Left: Map -->
     <section class="map-section">
       <div class="map-header">
-        <h2 class="map-title">🗺️ Explore the Map</h2>
-        <p class="map-hint">Click a <span class="highlight">marker</span> after selecting your era</p>
+        <h2 class="map-title">Explore the Map</h2>
+        <p class="map-hint">Select an era and click a marker to view details</p>
       </div>
       <div id="map"></div>
       <div class="map-legend">
@@ -79,13 +67,7 @@
     <section class="info-section">
       <div class="info-panel" id="info-panel">
         <div class="info-placeholder" id="info-placeholder">
-          <div class="placeholder-orbit">
-            <div class="orbit-ring ring-1"></div>
-            <div class="orbit-ring ring-2"></div>
-            <div class="orbit-ring ring-3"></div>
-            <div class="orbit-icon">🌍</div>
-          </div>
-          <h3 class="placeholder-title">Your Adventure Awaits</h3>
+            <h3 class="placeholder-title">Select a timeline era</h3>
           <p class="placeholder-text">Select a <strong>timeline era</strong> from the header, then <strong>click any
               marker</strong> on the map to uncover history.</p>
           <div class="step-hints">
@@ -107,7 +89,6 @@
         <div class="info-content hidden" id="info-content">
           <div class="info-era-badge" id="info-era-badge"></div>
           <div class="info-location-header">
-            <div class="location-icon" id="location-icon"></div>
             <div>
               <h3 class="info-location-name" id="info-location-name"></h3>
               <p class="info-location-region" id="info-location-region"></p>
@@ -115,10 +96,10 @@
           </div>
 
           <div class="info-tabs">
-            <button class="tab-btn active" id="tab-history" onclick="switchTab('history')">📜 History</button>
-            <button class="tab-btn" id="tab-culture" onclick="switchTab('culture')">🎭 Culture</button>
-            <button class="tab-btn" id="tab-food" onclick="switchTab('food')">🍛 Food</button>
-            <button class="tab-btn" id="tab-art" onclick="switchTab('art')">🎨 Art</button>
+            <button class="tab-btn active" id="tab-history" onclick="switchTab('history')">History</button>
+            <button class="tab-btn" id="tab-culture" onclick="switchTab('culture')">Culture</button>
+            <button class="tab-btn" id="tab-food" onclick="switchTab('food')">Food</button>
+            <button class="tab-btn" id="tab-art" onclick="switchTab('art')">Art</button>
           </div>
 
           <div class="tab-content" id="tab-content-history"></div>
@@ -127,7 +108,7 @@
           <div class="tab-content hidden" id="tab-content-art"></div>
 
           <div class="info-facts">
-            <h4 class="facts-title">⚡ Quick Facts</h4>
+            <h4 class="facts-title">Quick Facts</h4>
             <div class="facts-grid" id="facts-grid"></div>
           </div>
 
@@ -139,23 +120,14 @@
 
   <!-- Location Cards Strip -->
   <section class="locations-strip">
-    <h2 class="strip-title">📍 Featured Locations</h2>
+    <h2 class="strip-title">Featured Locations</h2>
     <div class="locations-scroll" id="locations-scroll"></div>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span>⏳</span> Time Travel Explorer
-      </div>
-      <p class="footer-text">Built for IWT Project · Powered by Leaflet.js & OpenStreetMap</p>
-      <div class="footer-links">
-        <span>🌐 OpenStreetMap</span>
-        <span>📚 Educational Use</span>
-        <span>🇮🇳 Celebrating India</span>
-      </div>
-    </div>
+    <p class="footer-text">Time Travel Explorer · Built for IWT Project</p>
+    <p class="footer-credits">Powered by Leaflet.js & OpenStreetMap</p>
   </footer>
 
   <!-- Leaflet JS -->
