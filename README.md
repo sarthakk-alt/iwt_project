@@ -41,7 +41,6 @@ We will source data from various sites. For now the implementation will be count
 ---
 
 ## How to Contribute
-1. **Fork this repo** and clone it.
 2. **Add events/media** – Edit the Google Sheet for TimelineJS or the `data.js` file.
 3. **Improve the map** – Add more cultural pins or fix locations.
 4. **Submit a PR** – Help make history more interactive!
