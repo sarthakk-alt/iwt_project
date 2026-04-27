@@ -1,0 +1,366 @@
+{
+  "18th": [
+  {
+    "name": "Delhi",
+    "region": "Northern India",
+    "lat": 28.7041,
+    "lng": 77.1025,
+    "icon": "🏰",
+
+    "history": "Delhi was the capital of the Mughal Empire during the 18th century and witnessed both cultural richness and political decline.",
+    "culture": "Mughal court culture promoted poetry, Urdu language, and Persian traditions.",
+    "food": "Mughlai cuisine flourished with rich dishes like kebabs and biryanis.",
+    "art": "Miniature paintings and grand Mughal architecture like the Red Fort defined the era.",
+
+    "historyFacts": [
+      "Mughal Empire",
+      "Imperial Capital",
+      "Nadir Shah Invasion"
+    ],
+    "cultureFacts": [
+      "Urdu Poetry",
+      "Persian Influence",
+      "Royal Courts"
+    ],
+    "foodFacts": [
+      "Mughlai Cuisine",
+      "Royal Kitchens",
+      "Kebabs & Biryani"
+    ],
+    "artFacts": [
+      "Miniature Art",
+      "Red Fort Design",
+      "Calligraphy"
+    ]
+  },
+
+  {
+    "name": "Agra",
+    "region": "Uttar Pradesh",
+    "lat": 27.1767,
+    "lng": 78.0081,
+    "icon": "💎",
+
+    "history": "Agra remained an important Mughal city though it declined after Delhi became the main capital.",
+    "culture": "The city reflected a blend of Persian and Indian traditions with strong artisan culture.",
+    "food": "Agra became famous for sweets like petha and continued Mughlai food traditions.",
+    "art": "The Taj Mahal and Agra Fort remained iconic symbols of Mughal architecture.",
+
+    "historyFacts": [
+      "Mughal Seat",
+      "Former Capital",
+      "Royal Residence"
+    ],
+    "cultureFacts": [
+      "Persian Blend",
+      "Craftsmanship",
+      "Court Culture"
+    ],
+    "foodFacts": [
+      "Agra Petha",
+      "Royal Desserts",
+      "Mughlai Cuisine"
+    ],
+    "artFacts": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Marble Inlay Work"
+    ]
+  },
+
+  {
+    "name": "Jaipur",
+    "region": "Rajasthan",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "icon": "🏛️",
+
+    "history": "Jaipur was founded in 1727 by Sawai Jai Singh II as a well-planned Rajput city.",
+    "culture": "The city reflected Rajput traditions and advancements in astronomy and urban planning.",
+    "food": "Rajasthani cuisine developed with dishes like dal baati and spicy curries.",
+    "art": "Architectural marvels like Jantar Mantar and City Palace showcased innovation.",
+
+    "historyFacts": [
+      "Founded 1727",
+      "Planned City",
+      "Rajput Kingdom"
+    ],
+    "cultureFacts": [
+      "Rajput Traditions",
+      "Astronomy Focus",
+      "Royal Lifestyle"
+    ],
+    "foodFacts": [
+      "Dal Baati",
+      "Bajra Roti",
+      "Spicy Cuisine"
+    ],
+    "artFacts": [
+      "Jantar Mantar",
+      "City Palace",
+      "Rajput Architecture"
+    ]
+  },
+
+  {
+    "name": "Lucknow",
+    "region": "Uttar Pradesh",
+    "lat": 26.8467,
+    "lng": 80.9462,
+    "icon": "🎭",
+
+    "history": "Lucknow was the capital of Awadh and a major political and cultural center.",
+    "culture": "It was known for refined etiquette, Urdu literature, and Nawabi traditions.",
+    "food": "The city became famous for kebabs and dum-style cooking.",
+    "art": "Kathak dance and classical music flourished under Nawabi patronage.",
+
+    "historyFacts": [
+      "Awadh Kingdom",
+      "Nawabi Rule",
+      "Cultural Peak"
+    ],
+    "cultureFacts": [
+      "Tehzeeb",
+      "Urdu Poetry",
+      "Court Culture"
+    ],
+    "foodFacts": [
+      "Biryani",
+      "Galouti Kebabs",
+      "Dum Cooking"
+    ],
+    "artFacts": [
+      "Kathak Dance",
+      "Classical Music",
+      "Nawabi Architecture"
+    ]
+  },
+
+  {
+    "name": "Hyderabad",
+    "region": "Telangana",
+    "lat": 17.3850,
+    "lng": 78.4867,
+    "icon": "👑",
+
+    "history": "Hyderabad was ruled by the Nizams and remained an independent princely state.",
+    "culture": "The city blended Persian traditions with Deccan culture.",
+    "food": "Hyderabadi cuisine developed with rich spices and biryani.",
+    "art": "Indo-Islamic architecture like Charminar dominated the city.",
+
+    "historyFacts": [
+      "Nizam Rule",
+      "Independent State",
+      "Royal Courts"
+    ],
+    "cultureFacts": [
+      "Persian Influence",
+      "Deccan Culture",
+      "Court Lifestyle"
+    ],
+    "foodFacts": [
+      "Hyderabadi Biryani",
+      "Rich Spices",
+      "Royal Feasts"
+    ],
+    "artFacts": [
+      "Charminar",
+      "Indo-Islamic Style",
+      "Palace Art"
+    ]
+  }
+],
+
+  "19th": [
+  {
+    "name": "Kolkata",
+    "region": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+
+    "history": "Kolkata served as the capital of British India and became the center of major intellectual and political movements during the 19th century.",
+    "culture": "The Bengal Renaissance transformed Kolkata into a hub of literature, education, and social reform.",
+    "food": "Bengali cuisine flourished with a focus on fish dishes and sweets like rasgulla and sandesh.",
+    "art": "Art and literature thrived with figures like Rabindranath Tagore shaping modern Indian thought.",
+
+    "historyFacts": ["British Capital", "Bengal Renaissance", "Colonial Hub"],
+    "cultureFacts": ["Literary Growth", "Social Reform", "Education Center"],
+    "foodFacts": ["Fish Curry", "Rasgulla", "Sweet Culture"],
+    "artFacts": ["Tagore Influence", "Literature Boom", "Theater"]
+  },
+
+  {
+    "name": "Mumbai",
+    "region": "Maharashtra",
+    "lat": 19.0760,
+    "lng": 72.8777,
+
+    "history": "Mumbai emerged as a major port city under British rule and became a center for trade and administration.",
+    "culture": "A cosmopolitan culture developed with diverse communities contributing to the city's growth.",
+    "food": "Street food culture began evolving with iconic items like vada pav and coastal dishes.",
+    "art": "Theater and early cinema started gaining popularity in Mumbai during this period.",
+
+    "historyFacts": ["British Port", "Trade Center", "Colonial Growth"],
+    "cultureFacts": ["Cosmopolitan Mix", "Diverse Communities", "Urban Culture"],
+    "foodFacts": ["Vada Pav", "Street Food", "Coastal Cuisine"],
+    "artFacts": ["Early Cinema", "Theater", "Art Deco"]
+  },
+
+  {
+    "name": "Delhi",
+    "region": "Northern India",
+    "lat": 28.7041,
+    "lng": 77.1025,
+
+    "history": "Delhi transitioned from a Mughal stronghold to a British administrative center during the 19th century.",
+    "culture": "The city's culture evolved with a mix of Mughal traditions and colonial influences.",
+    "food": "Delhi's cuisine blended Mughlai richness with emerging street food culture.",
+    "art": "Colonial architecture began shaping the city's landscape alongside historic monuments.",
+
+    "historyFacts": ["Colonial Shift", "Mughal Decline", "Admin Center"],
+    "cultureFacts": ["Cultural Transition", "Mixed Traditions", "Urban Influence"],
+    "foodFacts": ["Fusion Cuisine", "Street Food", "Mughlai Mix"],
+    "artFacts": ["Colonial Buildings", "Historic Blend", "Architecture"]
+  }
+],
+
+  "20th": [
+  {
+    "name": "New Delhi",
+    "region": "Delhi",
+    "lat": 28.6139,
+    "lng": 77.2090,
+
+    "history": "New Delhi was established as the capital of independent India after 1947, symbolizing a new democratic nation.",
+    "culture": "The city reflects a blend of modern Indian identity with diverse traditions from across the country.",
+    "food": "North Indian cuisine became widely recognized, along with a growing street food culture.",
+    "art": "Modern art, national monuments, and cultural institutions developed across the city.",
+
+    "historyFacts": ["Post-1947 Capital", "Independence Era", "Modern India"],
+    "cultureFacts": ["Diverse Culture", "National Identity", "Urban Lifestyle"],
+    "foodFacts": ["North Indian Cuisine", "National Dishes", "Street Food"],
+    "artFacts": ["Modern Art", "India Gate", "Cultural Centers"]
+  },
+
+  {
+    "name": "Mumbai",
+    "region": "Maharashtra",
+    "lat": 19.0760,
+    "lng": 72.8777,
+
+    "history": "Mumbai expanded rapidly as an industrial and commercial hub during the 20th century.",
+    "culture": "A vibrant cosmopolitan culture developed with influences from across India.",
+    "food": "Street food culture became iconic with dishes like pav bhaji and dosa.",
+    "art": "Mumbai became the center of Bollywood and India's film industry.",
+
+    "historyFacts": ["Cinema Rise", "Industrial Growth", "Urban Expansion"],
+    "cultureFacts": ["Cosmopolitan Life", "Film Culture", "Urban Diversity"],
+    "foodFacts": ["Pav Bhaji", "Dosa", "Street Culture"],
+    "artFacts": ["Bollywood", "Film Industry", "Pop Culture"]
+  },
+
+  {
+    "name": "Kolkata",
+    "region": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+
+    "history": "Kolkata remained a major cultural and intellectual center in the 20th century.",
+    "culture": "Bengali literature, art, and intellectual movements flourished.",
+    "food": "Traditional Bengali cuisine gained popularity across India.",
+    "art": "Parallel cinema and artistic films became prominent.",
+
+    "historyFacts": ["Cultural Hub", "Intellectual Center", "Colonial Legacy"],
+    "cultureFacts": ["Bengali Literature", "Art Movements", "Intellectual Life"],
+    "foodFacts": ["Fish Dishes", "Sweets", "Rice Cuisine"],
+    "artFacts": ["Parallel Cinema", "Art Films", "Theater"]
+  },
+
+  {
+    "name": "Chennai",
+    "region": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+
+    "history": "Chennai developed as a major administrative and cultural city in South India.",
+    "culture": "The city preserved classical traditions like Carnatic music and Bharatanatyam.",
+    "food": "South Indian cuisine became widely popular and standardized.",
+    "art": "Classical arts and temple architecture remained strong.",
+
+    "historyFacts": ["Colonial City", "Administrative Hub", "Growth Center"],
+    "cultureFacts": ["Carnatic Music", "Bharatanatyam", "Traditions"],
+    "foodFacts": ["Idli Dosa", "Sambar", "South Indian Cuisine"],
+    "artFacts": ["Classical Arts", "Temple Design", "Cultural Heritage"]
+  }
+],
+
+"modern": [
+  {
+    "name": "Hyderabad",
+    "region": "Telangana",
+    "lat": 17.3850,
+    "lng": 78.4867,
+
+    "history": "Hyderabad has transformed into a major IT and pharmaceutical hub in modern India.",
+    "culture": "The city blends traditional Nizami heritage with a fast-growing tech culture.",
+    "food": "Hyderabadi cuisine remains iconic while global food trends influence the city.",
+    "art": "Modern art and tech-driven creativity coexist with traditional architecture.",
+
+    "historyFacts": ["Tech Growth", "Nizam Legacy", "Urban Expansion"],
+    "cultureFacts": ["Heritage Blend", "Tech Culture", "Cosmopolitan Life"],
+    "foodFacts": ["Biryani", "Street Food", "Global Cuisine"],
+    "artFacts": ["Tech Art", "Fusion Culture", "Modern Design"]
+  },
+
+  {
+    "name": "Bangalore",
+    "region": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+
+    "history": "Bangalore became India's leading IT hub, attracting global companies and startups.",
+    "culture": "A youthful, tech-driven and cosmopolitan culture defines the city today.",
+    "food": "A mix of South Indian cuisine and modern cafes creates a diverse food scene.",
+    "art": "Digital art, innovation, and startup culture influence modern creative expression.",
+
+    "historyFacts": ["IT Boom", "Startup Hub", "Global Tech"],
+    "cultureFacts": ["Tech Lifestyle", "Youth Culture", "Global Influence"],
+    "foodFacts": ["Fusion Food", "Cafes", "South Indian"],
+    "artFacts": ["Digital Art", "Startup Culture", "Innovation"]
+  },
+
+  {
+    "name": "Pune",
+    "region": "Maharashtra",
+    "lat": 18.5204,
+    "lng": 73.8567,
+
+    "history": "Pune has grown into a major educational and IT center in modern India.",
+    "culture": "A youthful and academic culture dominates the city.",
+    "food": "Local Maharashtrian dishes mix with modern cafe culture.",
+    "art": "The city supports modern theater, music, and art scenes.",
+
+    "historyFacts": ["Education Hub", "IT Growth", "Urban Expansion"],
+    "cultureFacts": ["Student Culture", "Modern Lifestyle", "Innovation"],
+    "foodFacts": ["Misal Pav", "Street Food", "Cafe Culture"],
+    "artFacts": ["Theater", "Music Scene", "Modern Art"]
+  },
+
+  {
+    "name": "Gurgaon",
+    "region": "Haryana",
+    "lat": 28.4595,
+    "lng": 77.0266,
+
+    "history": "Gurgaon rapidly developed into a corporate and financial hub in modern India.",
+    "culture": "Corporate lifestyle and global work culture dominate the city.",
+    "food": "Global cuisines and modern dining experiences are common.",
+    "art": "Modern architecture and urban design define the cityscape.",
+
+    "historyFacts": ["Corporate Hub", "Rapid Growth", "Urban Development"],
+    "cultureFacts": ["Corporate Life", "Global Culture", "Modern Lifestyle"],
+    "foodFacts": ["Global Cuisine", "Fine Dining", "Food Chains"],
+    "artFacts": ["Modern Design", "Skyscrapers", "Urban Planning"]
+  }
+]
+}
