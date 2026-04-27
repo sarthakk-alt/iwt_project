@@ -12,7 +12,8 @@ async function loadHistoricalData() {
     }
     
     historicalData = await response.json();
-    console.log('Data loaded successfully:', Object.klet historicalData = {};
+    let historicalData = {};
+    console.log('Data loaded successfully:', Object.keys(historicalData));
 let map;
 let markers = [];
 let currentMarker = null;
