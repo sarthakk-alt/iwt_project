@@ -12,7 +12,153 @@ async function loadHistoricalData() {
     }
     
     historicalData = await response.json();
-    console.log('Data loaded successfully:', Object.keys(historicalData));
+    console.log('Data loaded successfully:', Object.klet historicalData = {};
+let map;
+let markers = [];
+let currentMarker = null;
+
+// Load JSON
+async function loadHistoricalData() {
+  try {
+    const response = await fetch('data.json?v=6');
+    historicalData = await response.json();
+    return historicalData;
+  } catch (error) {
+    console.error('Error loading data:', error);
+    alert('Error loading data.json');
+    return null;
+  }
+}
+
+// Map init
+function initMap() {
+  map = L.map('map').setView([20.5937, 78.9629], 5);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+}
+
+// Clear markers
+function clearMarkers() {
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+}
+
+// Display markers
+function displayMarkers(era) {
+  clearMarkers();
+
+  if (!historicalData[era]) return;
+
+  historicalData[era].forEach(loc => {
+    const marker = L.marker([loc.lat, loc.lng])
+      .addTo(map)
+      .on('click', () => displayLocationInfo(loc, era));
+
+    markers.push(marker);
+  });
+}
+
+// Display location info
+function displayLocationInfo(location, era) {
+  currentMarker = location;
+
+  document.getElementById('info-placeholder').classList.add('hidden');
+  document.getElementById('info-content').classList.remove('hidden');
+
+  document.getElementById('info-location-name').textContent = location.name;
+  document.getElementById('info-location-region').textContent = location.region;
+
+  document.getElementById('tab-content-history').textContent = location.history;
+  document.getElementById('tab-content-culture').textContent = location.culture;
+  document.getElementById('tab-content-food').textContent = location.food;
+  document.getElementById('tab-content-art').textContent = location.art;
+
+  switchTab('history'); // default tab
+  updateFacts(location, 'history');
+
+  map.flyTo([location.lat, location.lng], 10);
+}
+
+// FACTS (NO FALLBACKS — PURE JSON)
+function updateFacts(location, tab) {
+  const factsGrid = document.getElementById('facts-grid');
+
+  let facts = [];
+
+  if (tab === 'history') facts = location.historyFacts;
+  if (tab === 'culture') facts = location.cultureFacts;
+  if (tab === 'food') facts = location.foodFacts;
+  if (tab === 'art') facts = location.artFacts;
+
+  factsGrid.innerHTML = `
+    <h4 style="margin-bottom:8px;">${tab.toUpperCase()} FACTS</h4>
+    ${facts.map(f => `<div class="fact-item">${f}</div>`).join('')}
+  `;
+}
+
+// Tab switching
+function switchTab(tabName) {
+  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+  document.getElementById(`tab-content-${tabName}`).classList.remove('hidden');
+  document.getElementById(`tab-${tabName}`).classList.add('active');
+
+  if (currentMarker) {
+    updateFacts(currentMarker, tabName);
+  }
+}
+
+// Timeline dropdown
+function setupTimelineListener() {
+  document.getElementById('timeline-select').addEventListener('change', e => {
+    const era = e.target.value;
+
+    if (era) displayMarkers(era);
+    else clearMarkers();
+
+    document.getElementById('info-placeholder').classList.remove('hidden');
+    document.getElementById('info-content').classList.add('hidden');
+  });
+}
+
+// Init
+document.addEventListener('DOMContentLoaded', async () => {
+  const data = await loadHistoricalData();
+  if (!data) return;
+
+  initMap();
+  setupTimelineListener();
+
+  const allLocations = [];
+  for (const era in historicalData) {
+    allLocations.push(...historicalData[era]);
+  }
+
+  document.getElementById('locations-scroll').innerHTML =
+    allLocations.map(loc => `
+      <div class="location-card" onclick="selectLocation('${loc.name}')">
+        <div>${loc.name}</div>
+        <small>${loc.region}</small>
+      </div>
+    `).join('');
+});
+
+// Select from cards
+function selectLocation(name) {
+  for (const era in historicalData) {
+    const loc = historicalData[era].find(l => l.name === name);
+    if (loc) {
+      document.getElementById('timeline-select').value = era;
+      document.getElementById('timeline-select').dispatchEvent(new Event('change'));
+
+      setTimeout(() => displayLocationInfo(loc, era), 300);
+      break;
+    }
+  }
+}eys(historicalData));
     
     // Verify data structure
     for (const era in historicalData) {
