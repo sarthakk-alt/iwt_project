@@ -1,16 +1,15 @@
-/* Super simple CSS - made by a beginner */
-/* No fancy stuff, no animations, no shadows, just clean pastel colors */
+
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f7f4; /* soft pastel mint */
+  background-color: #f0f7f4; 
   color: #2c3e50;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
-/* Header - very plain */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -480,7 +479,7 @@ body {
   border-top: 2px solid #5e9c8e;
 }
 
-/* Make everything smaller and cleaner on phones */
+
 @media (max-width: 900px) {
   .main-layout {
     grid-template-columns: 1fr;
