@@ -478,38 +478,3 @@ body {
   background-color: #ffffff;
   border-top: 2px solid #5e9c8e;
 }
-
-
-@media (max-width: 900px) {
-  .main-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .header-inner {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .timeline-control {
-    flex: 1;
-    width: 100%;
-  }
-
-  .era-select {
-    width: 100%;
-    min-width: auto;
-  }
-
-  .info-panel {
-    max-height: none;
-  }
-
-  #map {
-    min-height: 300px;
-  }
-
-  .location-card {
-    min-width: 120px;
-    padding: 12px;
-  }
-}
